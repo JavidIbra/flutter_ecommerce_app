@@ -8,14 +8,11 @@ class CTexts {
   static const String onBoardingTitle3 = "Deliver at your door step";
 
   static const String onBoardingSubTitle1 =
-      "assets/logos/t_store_splash-logo-black.png";
-  static const String onBoardingSubTitle2 =
-      "assets/logos/t_store_splash-logo-black.png";
-  static const String onBoardingSubTitl31 =
-      "assets/logos/t_store_splash-logo-black.png";
+      "welcome to a World of Limitles Choices - Your Perfect Product awaits";
+  static const String onBoardingSubTitle2 = "test";
+  static const String onBoardingSubTitle3 = "test";
 
   // -- Home
   static const String homeAppBarTitle = "Good day for shopping";
-  static const String homeAppBarSubTitle =
-      "assets/logos/t_store_splash-logo-black.png";
+  static const String homeAppBarSubTitle = "test";
 }
