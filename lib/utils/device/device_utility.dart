@@ -88,7 +88,7 @@ class CDeviceUtils {
         overlays: SystemUiOverlay.values);
   }
 
-  static Future<bool> HasInternetConnection() async {
+  static Future<bool> hasInternetConnection() async {
     try {
       final result = await InternetAddress.lookup('example.com');
       return result.isNotEmpty && result[0].rawAddress.isNotEmpty;

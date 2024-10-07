@@ -1,16 +1,14 @@
 class CImages {
   //---app logos
-  static const String darkAppLogo =
-      "assets/logos/t_store_splash-logo-black.png";
+  static const String darkAppLogo = "assets/logos/download.png";
 
-  static const String lightAppLogo =
-      "assets/logos/t_store_splash-logo-black.png";
+  static const String lightAppLogo = "assets/logos/logo_dark.png";
 
   //--- Social Logos
 
-  static const String google = "assets/logos/t_store_splash-logo-black.png";
+  static const String google = "assets/logos/google.png";
 
-  static const String facebook = "assets/logos/t_store_splash-logo-black.png";
+  static const String facebook = "assets/logos/facebook.png";
 
   //--- Social Logos
 
