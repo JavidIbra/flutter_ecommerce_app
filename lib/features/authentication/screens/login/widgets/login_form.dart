@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:flutter_ecommerce_app/features/authentication/screens/signup/signup.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/constants/text_string.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CLoginForm extends StatelessWidget {
@@ -51,7 +54,7 @@ class CLoginForm extends StatelessWidget {
 
                 /// Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(CTexts.forgetPassword),
                 ),
                 const SizedBox(height: CSizes.spaceBtwSections),
@@ -71,7 +74,7 @@ class CLoginForm extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const SignupScreen()),
                     child: const Text(CTexts.createAccount),
                   ),
                 ),

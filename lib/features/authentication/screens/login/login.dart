@@ -17,32 +17,25 @@ class LoginScreen extends StatelessWidget {
     final dark = CHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
-        child: ConstrainedBox(
-          constraints: BoxConstraints(
-            minHeight: MediaQuery.of(context).size.height,
-          ),
-          child: Padding(
-            padding: CSpacingStyle.paddingWithAppBarHeight,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                /// Logo title and sub title
-                CLoginHeader(dark: dark),
+        child: Padding(
+          padding: CSpacingStyle.paddingWithAppBarHeight,
+          child: Column(
+            children: [
+              /// Logo title and sub title
+              CLoginHeader(dark: dark),
 
-                /// Form
-                const CLoginForm(),
+              /// Form
+              const CLoginForm(),
 
-                /// Divider
-                CFormDivider(dividertext: CTexts.orSignInWith.capitalize!),
+              /// Divider
+              CFormDivider(dividertext: CTexts.orSignInWith.capitalize!),
 
-                const SizedBox(height: CSizes.spaceBtwSections),
+              const SizedBox(height: CSizes.spaceBtwSections),
 
-                /// Footer
+              /// Footer
 
-                const SocialButtons(),
-              ],
-            ),
+              const SocialButtons(),
+            ],
           ),
         ),
       ),

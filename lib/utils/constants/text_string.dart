@@ -35,7 +35,7 @@ class CTexts {
   static const String yourAccountCreatedTitle =
       "Your Account Successfully created!";
   static const String yourAccountCreatedSubTitle =
-      "Your Account Successfully created!";
+      "Your Account created Succesfully!";
 
   //--- Authentication Form Text
   static const String firstName = "Ad";
@@ -52,6 +52,7 @@ class CTexts {
   static const String orSignInWith = "or Sign in with";
   static const String orSignUpWith = "or Sign up with";
   static const String iAgreeTo = "I Agree to";
+  static const String and = "Və";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of Use";
   static const String verificationCode = "Verification Code";

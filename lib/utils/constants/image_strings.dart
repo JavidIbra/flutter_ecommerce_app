@@ -10,7 +10,7 @@ class CImages {
 
   static const String facebook = "assets/logos/facebook.png";
 
-  //--- Social Logos
+  //--- Onboarding Images
 
   static const String onBoardingImage1 =
       "assets/images/on_boarding_images/profile.gif";
@@ -18,4 +18,15 @@ class CImages {
       "assets/images/on_boarding_images/queue.gif";
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/start.gif";
+
+  //--- Animations
+
+  static const String productsIllustration =
+      "assets/images/animations/profile.gif";
+  static const String productsSaleIllustration =
+      "assets/images/animations/profile.gif";
+  static const String staticSuccessIllustration =
+      "assets/images/animations/profile.gif";
+  static const String productIllustration =
+      "assets/images/animations/profile.gif";
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app/features/authentication/screens/login/login.dart';
+import 'package:flutter_ecommerce_app/features/authentication/screens/signup/signup.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
@@ -15,13 +15,14 @@ class OnBoardingController extends GetxController {
   /// Jump to the spesific dot selected page
   void dotNavigationClick(index) {
     currentPageIndex.value = index;
-    pageController.jumpTo(index as double);
+    pageController.jumpTo(index);
   }
 
   /// Update Current index and jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() => const SignupScreen());
+      // Get.offAll(() => const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
