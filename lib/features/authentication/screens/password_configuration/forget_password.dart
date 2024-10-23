@@ -37,6 +37,7 @@ class ForgetPassword extends StatelessWidget {
                   labelText: CTexts.email,
                   prefixIcon: Icon(Iconsax.direct_right)),
             ),
+            const SizedBox(height: CSizes.spaceBtwItems),
 
             /// Submit Buttton
             SizedBox(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:flutter_ecommerce_app/features/authentication/screens/signup/signup.dart';
+import 'package:flutter_ecommerce_app/navigation_menu.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/constants/text_string.dart';
 import 'package:get/get.dart';
@@ -15,9 +16,7 @@ class CLoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: CSizes.spaceBtwSections,
-        ),
+        padding: const EdgeInsets.symmetric(vertical: CSizes.spaceBtwSections),
         child: Column(
           children: [
             /// Email
@@ -57,28 +56,28 @@ class CLoginForm extends StatelessWidget {
                   onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(CTexts.forgetPassword),
                 ),
-                const SizedBox(height: CSizes.spaceBtwSections),
-
-                /// Sign In Button
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: const Text(CTexts.signIn),
-                  ),
-                ),
-
-                const SizedBox(height: CSizes.spaceBtwItems),
-
-                /// Create Account Button
-                SizedBox(
-                  width: double.infinity,
-                  child: OutlinedButton(
-                    onPressed: () => Get.to(() => const SignupScreen()),
-                    child: const Text(CTexts.createAccount),
-                  ),
-                ),
               ],
+            ),
+            const SizedBox(height: CSizes.spaceBtwSections),
+
+            /// Sign In Button
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => Get.to(() => const NavigationMenu()),
+                child: const Text(CTexts.signIn),
+              ),
+            ),
+
+            const SizedBox(height: CSizes.spaceBtwItems),
+
+            /// Create Account Button
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () => Get.to(() => const SignupScreen()),
+                child: const Text(CTexts.createAccount),
+              ),
             ),
           ],
         ),
