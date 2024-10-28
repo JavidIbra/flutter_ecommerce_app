@@ -14,7 +14,7 @@ class CTexts {
 
   // -- Home
   static const String homeAppBarTitle = "Good day for shopping";
-  static const String homeAppBarSubTitle = "test";
+  static const String homeAppBarSubTitle = "Hakim Hasan";
 
   //--- Authentication Headings Text
   static const String loginTitle = "Welcome Back";

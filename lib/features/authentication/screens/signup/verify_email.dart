@@ -7,7 +7,6 @@ import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/constants/text_string.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});
