@@ -29,4 +29,8 @@ class CImages {
       "assets/images/animations/profile.gif";
   static const String productIllustration =
       "assets/images/animations/profile.gif";
+
+  static const String promoBanner1 = "assets/images/banners/shoes.jpg";
+  static const String promoBanner2 = "assets/images/banners/shoes2.jpg";
+  static const String promoBanner3 = "assets/images/banners/shoes3.jpg";
 }
