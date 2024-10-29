@@ -33,4 +33,9 @@ class CImages {
   static const String promoBanner1 = "assets/images/banners/shoes.jpg";
   static const String promoBanner2 = "assets/images/banners/shoes2.jpg";
   static const String promoBanner3 = "assets/images/banners/shoes3.jpg";
+
+  static const String productImage1 = "assets/images/products/product1.jpg";
+  static const String productImage2 = "assets/images/products/shoes.jpg";
+  static const String productImage3 = "assets/images/products/shoes.jpg";
+  static const String productImage4 = "assets/images/products/shoes.jpg";
 }

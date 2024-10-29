@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:flutter_ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/home/widgets/home_categories.dart';
@@ -56,11 +57,23 @@ class HomeScreen extends StatelessWidget {
 
             Padding(
               padding: EdgeInsets.all(CSizes.defaultSpace),
-              child: CPromoSlider(
-                banners: [
-                  CImages.promoBanner1,
-                  CImages.promoBanner2,
-                  CImages.promoBanner3
+              child: Column(
+                children: [
+                  /// PromoSlider
+
+                  CPromoSlider(
+                    banners: [
+                      CImages.promoBanner1,
+                      CImages.promoBanner2,
+                      CImages.promoBanner3
+                    ],
+                  ),
+
+                  SizedBox(height: CSizes.spaceBtwSections),
+
+                  /// Popular Products
+
+                  CProductCardVertical(),
                 ],
               ),
             ),
