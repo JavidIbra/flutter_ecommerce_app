@@ -35,7 +35,13 @@ class CImages {
   static const String promoBanner3 = "assets/images/banners/shoes3.jpg";
 
   static const String productImage1 = "assets/images/products/product1.jpg";
-  static const String productImage2 = "assets/images/products/shoes.jpg";
-  static const String productImage3 = "assets/images/products/shoes.jpg";
-  static const String productImage4 = "assets/images/products/shoes.jpg";
+  static const String productImage2 = "assets/images/products/product2.jpg";
+  static const String productImage3 = "assets/images/products/product3.jpg";
+  static const String productImage4 = "assets/images/products/product4.jpg";
+  static const String productImage5 = "assets/images/products/product5.jpg";
+  static const String productImage6 = "assets/images/products/product6.jpg";
+  static const String productImage7 = "assets/images/products/product7.jpg";
+  static const String productImage8 = "assets/images/products/product8.jpg";
+  static const String productImage9 = "assets/images/products/product9.jpg";
+  static const String productImage10 = "assets/images/products/product10.jpg";
 }
