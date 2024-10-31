@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 
 class CRoundedImage extends StatelessWidget {
@@ -10,7 +9,7 @@ class CRoundedImage extends StatelessWidget {
     required this.imageUrl,
     this.applyImageRadius = false,
     this.border,
-    this.backgroundColor = CColors.light,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.padding,
     this.isNetworkImage = false,
@@ -22,7 +21,7 @@ class CRoundedImage extends StatelessWidget {
   final String imageUrl;
   final bool applyImageRadius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;

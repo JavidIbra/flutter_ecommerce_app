@@ -3,6 +3,7 @@ import 'package:flutter_ecommerce_app/common/styles/shadows.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/c_circular_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/images/rounded_images.dart';
+import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
@@ -81,66 +82,68 @@ class CProductCardVertical extends StatelessWidget {
             /// Details
 
             Padding(
-                padding: const EdgeInsets.only(left: CSizes.sm),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const CProductTitleText(
-                      title: 'Grey Nike Air Shoes',
-                      smallSize: true,
+              padding: const EdgeInsets.only(left: CSizes.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const CProductTitleText(
+                    title: 'Grey Nike Air Shoes',
+                    smallSize: true,
+                  ),
+                  const SizedBox(height: CSizes.spaceBtwItems / 2),
+                  Row(
+                    children: [
+                      Text(
+                        'Nike',
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                        style: Theme.of(context).textTheme.labelMedium,
+                      ),
+                      const SizedBox(width: CSizes.xs),
+                      const Icon(
+                        Iconsax.verify5,
+                        color: CColors.primary,
+                        size: CSizes.iconXs,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            const Spacer(),
+
+            /// Price row
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ///Price
+                const Padding(
+                  padding: EdgeInsets.only(left: CSizes.sm),
+                  child: CProductPriceText(price: '35.0'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: CColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(CSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(CSizes.productImageRadius),
                     ),
-                    const SizedBox(height: CSizes.spaceBtwItems / 2),
-                    Row(
-                      children: [
-                        Text(
-                          'Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium,
-                        ),
-                        const SizedBox(width: CSizes.xs),
-                        const Icon(
-                          Iconsax.verify5,
-                          color: CColors.primary,
-                          size: CSizes.iconXs,
-                        ),
-                      ],
+                  ),
+                  child: const SizedBox(
+                    width: CSizes.iconLg * 1.2,
+                    height: CSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: CColors.white,
+                      ),
                     ),
-                    // Spacer(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        ///Price
-                        Text(
-                          '\$35.5',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.headlineMedium,
-                        ),
-                        Container(
-                          decoration: const BoxDecoration(
-                            color: CColors.dark,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(CSizes.cardRadiusMd),
-                              bottomRight:
-                                  Radius.circular(CSizes.productImageRadius),
-                            ),
-                          ),
-                          child: const SizedBox(
-                            width: CSizes.iconLg * 1.2,
-                            height: CSizes.iconLg * 1.2,
-                            child: Center(
-                              child: Icon(
-                                Iconsax.add,
-                                color: CColors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
-                ))
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

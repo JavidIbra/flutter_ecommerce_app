@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:flutter_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
@@ -15,11 +16,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            CPrimaryHeaderContainer(
+            const CPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// AppBar
@@ -56,24 +57,28 @@ class HomeScreen extends StatelessWidget {
             /// Body
 
             Padding(
-              padding: EdgeInsets.all(CSizes.defaultSpace),
+              padding: const EdgeInsets.all(CSizes.defaultSpace),
               child: Column(
                 children: [
                   /// PromoSlider
 
-                  CPromoSlider(
-                    banners: [
-                      CImages.promoBanner1,
-                      CImages.promoBanner2,
-                      CImages.promoBanner3
-                    ],
-                  ),
+                  const CPromoSlider(banners: [
+                    CImages.promoBanner1,
+                    CImages.promoBanner2,
+                    CImages.promoBanner3
+                  ]),
 
-                  SizedBox(height: CSizes.spaceBtwSections),
+                  const SizedBox(height: CSizes.spaceBtwSections),
+
+                  /// Heading
+                  const CSectionHeading(title: 'Popular Products'),
+                  const SizedBox(height: CSizes.spaceBtwSections),
 
                   /// Popular Products
-
-                  CProductCardVertical(),
+                  CGridLayout(
+                    itemCount: 2,
+                    itemBuilder: (_, index) => const CProductCardVertical(),
+                  ),
                 ],
               ),
             ),
