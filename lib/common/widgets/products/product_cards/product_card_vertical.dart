@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/styles/shadows.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/c_circular_icon.dart';
-import 'package:flutter_ecommerce_app/common/widgets/images/rounded_images.dart';
+import 'package:flutter_ecommerce_app/common/widgets/images/rounded_image.dart';
+import 'package:flutter_ecommerce_app/common/widgets/texts/brand_title_text.dart';
+import 'package:flutter_ecommerce_app/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
+import 'package:flutter_ecommerce_app/utils/constants/enums.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
@@ -81,32 +84,17 @@ class CProductCardVertical extends StatelessWidget {
 
             /// Details
 
-            Padding(
+            const Padding(
               padding: const EdgeInsets.only(left: CSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CProductTitleText(
+                  CProductTitleText(
                     title: 'Grey Nike Air Shoes',
                     smallSize: true,
                   ),
-                  const SizedBox(height: CSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: CSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: CColors.primary,
-                        size: CSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  SizedBox(height: CSizes.spaceBtwItems / 2),
+                  CBrandTitleWithVerifiedIcon(),
                 ],
               ),
             ),
