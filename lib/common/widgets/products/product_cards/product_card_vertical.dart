@@ -94,7 +94,7 @@ class CProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: CSizes.spaceBtwItems / 2),
-                  CBrandTitleWithVerifiedIcon(),
+                  CBrandTitleWithVerifiedIcon(title: "Nike"),
                 ],
               ),
             ),

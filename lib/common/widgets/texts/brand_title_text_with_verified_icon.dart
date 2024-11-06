@@ -19,7 +19,7 @@ class CBrandTitleWithVerifiedIcon extends StatelessWidget {
   final String title;
   final int maxLines;
   final Color? textColor, iconColor;
-  final TextAlign? textAlign;
+  final TextAlign textAlign;
   final TextSizes brandTextSize;
 
   @override
