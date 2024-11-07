@@ -3,12 +3,10 @@ import 'package:flutter_ecommerce_app/common/styles/shadows.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/c_circular_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/images/rounded_image.dart';
-import 'package:flutter_ecommerce_app/common/widgets/texts/brand_title_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_app/utils/constants/enums.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
@@ -85,7 +83,7 @@ class CProductCardVertical extends StatelessWidget {
             /// Details
 
             const Padding(
-              padding: const EdgeInsets.only(left: CSizes.sm),
+              padding: EdgeInsets.only(left: CSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

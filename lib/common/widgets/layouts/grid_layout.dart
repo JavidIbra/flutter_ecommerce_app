@@ -5,8 +5,8 @@ class CGridLayout extends StatelessWidget {
   const CGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisExtent = 200,
     required this.itemBuilder,
+    this.mainAxisExtent = 288,
   });
 
   final int itemCount;
@@ -20,11 +20,11 @@ class CGridLayout extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       itemCount: itemCount,
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: CSizes.gridviewSpacing,
         crossAxisSpacing: CSizes.gridviewSpacing,
-        mainAxisExtent: 200,
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuilder,
     );
