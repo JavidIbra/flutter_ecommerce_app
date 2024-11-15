@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar/tabbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/brands/brand_card.dart';
-import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
 
@@ -95,109 +94,16 @@ class StoreScreen extends StatelessWidget {
 
           /// Tabs
 
-          body: TabBarView(
+          body: const TabBarView(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(CSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    /// -- Brands
-                    CBrandShowcase(),
-
-                    /// -- Products
-                  ],
-                ),
-              )
+              CCategoryTab(),
+              CCategoryTab(),
+              CCategoryTab(),
+              CCategoryTab(),
+              CCategoryTab(),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class CBrandShowcase extends StatelessWidget {
-  const CBrandShowcase({
-    super.key,
-    required this.images,
-  });
-
-  final List<String> images;
-
-  @override
-  Widget build(BuildContext context) {
-    return CRoundedContainer(
-      showBorder: true,
-      borderColor: CColors.darkGrey,
-      backgroundColor: Colors.transparent,
-      padding: const EdgeInsets.all(CSizes.md),
-      margin: const EdgeInsets.only(bottom: CSizes.spaceBtwItems),
-      child: Column(
-        children: [
-          /// Brand with Products Count
-          const CBrandCard(
-            showBorder: false,
-          ),
-
-          /// Brand Top 3 Product Images
-          Row(
-            children: [
-              Expanded(
-                child: CRoundedContainer(
-                  height: 100,
-                  backgroundColor: CHelperFunctions.isDarkMode(context)
-                      ? CColors.darkGrey
-                      : CColors.light,
-                  margin: const EdgeInsets.only(right: CSizes.sm),
-                  padding: const EdgeInsets.all(CSizes.md),
-                  child: const Image(
-                    fit: BoxFit.contain,
-                    image: AssetImage(CImages.productImage3),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: CRoundedContainer(
-                  height: 100,
-                  backgroundColor: CHelperFunctions.isDarkMode(context)
-                      ? CColors.darkGrey
-                      : CColors.light,
-                  margin: const EdgeInsets.only(right: CSizes.sm),
-                  padding: const EdgeInsets.all(CSizes.md),
-                  child: const Image(
-                    fit: BoxFit.contain,
-                    image: AssetImage(CImages.productImage3),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: CRoundedContainer(
-                  height: 100,
-                  backgroundColor: CHelperFunctions.isDarkMode(context)
-                      ? CColors.darkGrey
-                      : CColors.light,
-                  margin: const EdgeInsets.only(right: CSizes.sm),
-                  padding: const EdgeInsets.all(CSizes.md),
-                  child: const Image(
-                    fit: BoxFit.contain,
-                    image: AssetImage(CImages.productImage3),
-                  ),
-                ),
-              ),
-            ],
-          )
-        ],
-      ),
-    );
-  }
-
-  Widget brandTopProductImageWidget(String image, context) {
-    return Expanded(
-      child: CRoundedContainer(
-        height: 100,
-        padding: const EdgeInsets.all(CSizes.md),
-        margin: const EdgeInsets.only(right: CSizes.sm),
-        backgroundColor: ,
       ),
     );
   }
