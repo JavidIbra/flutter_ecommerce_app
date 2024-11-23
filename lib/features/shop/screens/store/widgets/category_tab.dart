@@ -45,7 +45,7 @@ class CCategoryTab extends StatelessWidget {
 
               CGridLayout(
                 itemCount: 4,
-                itemBuilder: (_, index) => CProductCardVertical(),
+                itemBuilder: (_, index) => const CProductCardVertical(),
               ),
               const SizedBox(height: CSizes.spaceBtwItems),
             ],
