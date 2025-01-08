@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:flutter_ecommerce_app/common/widgets/images/circular_image.dart';
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -34,7 +32,7 @@ class SettingScreen extends StatelessWidget {
                     ),
                   ),
 
-                  /// --UserProfile
+                  /// -- UserProfile Card
                   const CUserProfileTile(),
                   const SizedBox(height: CSizes.spaceBtwSections),
                 ],
@@ -49,50 +47,53 @@ class SettingScreen extends StatelessWidget {
                 children: [
                   /// -- Account Settings
 
-                  const CSectionHeading(title: 'Account Settings'),
+                  const CSectionHeading(
+                    title: 'Account Settings',
+                    showActionButton: false,
+                  ),
                   const SizedBox(height: CSizes.spaceBtwItems),
 
                   CSettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: "My Adresses",
                     subTitle: 'Set shopping delivery address',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
                     title: "My Cart",
                     subTitle: 'Add ,remove products and move to checkout',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: "My Orders",
                     subTitle: 'In-Progress and Completed Oreders',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.bank,
                     title: "Bank Account",
                     subTitle: 'WithDraw balance to registered bank account',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.discount_shape,
                     title: "My Coupons",
                     subTitle: 'List of all the discounted coupons',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.notification,
                     title: "Notifications",
                     subTitle: 'Set any kind of notification message',
-                    onTop: () {},
+                    onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.security_card,
-                    title: "Notifications",
+                    title: "Account Privacy",
                     subTitle: 'Manage data usage and connected accounts',
-                    onTop: () {},
+                    onTap: () {},
                   ),
 
                   /// -- App Settings
@@ -137,7 +138,7 @@ class SettingScreen extends StatelessWidget {
                       child: const Text('Logout'),
                     ),
                   ),
-                  const SizedBox(height: CSizes.spaceBtwSections),
+                  const SizedBox(height: CSizes.spaceBtwSections * 2.5),
                 ],
               ),
             )

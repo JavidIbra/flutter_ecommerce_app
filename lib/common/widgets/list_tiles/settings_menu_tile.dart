@@ -8,12 +8,12 @@ class CSettingsMenuTile extends StatelessWidget {
       required this.title,
       required this.subTitle,
       this.trailing,
-      this.onTop});
+      this.onTap});
 
   final IconData icon;
   final String title, subTitle;
   final Widget? trailing;
-  final VoidCallback? onTop;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class CSettingsMenuTile extends StatelessWidget {
         style: Theme.of(context).textTheme.labelMedium,
       ),
       trailing: trailing,
-      onTap: onTop,
+      onTap: onTap,
     );
   }
 }
