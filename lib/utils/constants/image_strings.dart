@@ -21,7 +21,7 @@ class CImages {
 
   //--- Profile
 
-  static const String user = "assets/images/user/profile.png";
+  static const String user = "assets/images/user/userprof.png";
 
   //--- Animations
 

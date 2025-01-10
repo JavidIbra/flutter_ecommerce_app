@@ -4,8 +4,10 @@ import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/pr
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:flutter_ecommerce_app/features/personalization/screens/profile/widgets/profile.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -33,7 +35,8 @@ class SettingScreen extends StatelessWidget {
                   ),
 
                   /// -- UserProfile Card
-                  const CUserProfileTile(),
+                  CUserProfileTile(
+                      onPressed: () => Get.to(() => const ProfileScreen())),
                   const SizedBox(height: CSizes.spaceBtwSections),
                 ],
               ),
@@ -85,13 +88,13 @@ class SettingScreen extends StatelessWidget {
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.notification,
-                    title: "Notifications",
+                    title: 'Notifications',
                     subTitle: 'Set any kind of notification message',
                     onTap: () {},
                   ),
                   CSettingsMenuTile(
                     icon: Iconsax.security_card,
-                    title: "Account Privacy",
+                    title: 'Account Privacy',
                     subTitle: 'Manage data usage and connected accounts',
                     onTap: () {},
                   ),
