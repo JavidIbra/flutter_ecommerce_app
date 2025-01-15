@@ -53,6 +53,9 @@ dependencies:
   # product spesific
   carousel_slider: ^5.0.0
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+
+  
 
   #------------- ./ Packages end  -----------#
 
@@ -88,6 +91,7 @@ flutter:
     - assets/images/banners/
     - assets/images/products/
     - assets/images/user/
+    - assets/images/reviews/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

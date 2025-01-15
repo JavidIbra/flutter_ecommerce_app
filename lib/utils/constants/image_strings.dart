@@ -19,6 +19,15 @@ class CImages {
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/start.gif";
 
+  //--- Product Reviews
+
+  static const String userProfileImage1 =
+      "assets/images/reviews/profile_review1.jpg";
+  static const String userProfileImage2 =
+      "assets/images/reviews/profile_review2.jpg";
+  static const String userProfileImage3 =
+      "assets/images/reviews/profile_review3.jpg";
+
   //--- Profile
 
   static const String user = "assets/images/user/userprof.png";

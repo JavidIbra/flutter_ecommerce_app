@@ -24,7 +24,7 @@ class CBottomAddToCard extends StatelessWidget {
       child: Row(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const CCircularIcon(
                 icon: Iconsax.minus,
