@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/rating/rating_indicator.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
@@ -41,7 +42,10 @@ class ProductReviewsScreen extends StatelessWidget {
               const SizedBox(height: CSizes.spaceBtwSections),
 
               /// User Reviews List
-              // UseReviewCard()
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ));

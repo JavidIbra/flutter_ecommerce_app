@@ -46,11 +46,11 @@ class UserReviewCard extends StatelessWidget {
         ),
         const SizedBox(height: CSizes.spaceBtwItems),
         const ReadMoreText(
-          'LBLJlk;jnlkjnvdfkvfvkkv vfbvlfvfdv ljvffv',
+          'Ratings and reviews are verified and are from people who use the same type of device that u use ,of device that u use',
           trimLines: 2,
           trimMode: TrimMode.Line,
-          trimExpandedText: 'show less',
-          trimCollapsedText: 'show more',
+          trimExpandedText: '... show less',
+          trimCollapsedText: '... show more',
           moreStyle: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,
@@ -65,8 +65,39 @@ class UserReviewCard extends StatelessWidget {
         /// Company Review
         CRoundedContainer(
           backgroundColor: dark ? CColors.darkerGrey : CColors.grey,
-          child: Padding(padding: EdgeInsets.all(CSizes.md)),
-        )
+          child: Padding(
+            padding: const EdgeInsets.all(CSizes.md),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("C's store",
+                        style: Theme.of(context).textTheme.bodyLarge),
+                    Text("16 Jan 2024",
+                        style: Theme.of(context).textTheme.bodyMedium),
+                  ],
+                ),
+                const SizedBox(height: CSizes.spaceBtwItems),
+                const ReadMoreText(
+                  'Ratings and reviews are verified and are from people who use the same type of device that u use ,of device that u use',
+                  trimLines: 2,
+                  trimMode: TrimMode.Line,
+                  trimExpandedText: '... show less',
+                  trimCollapsedText: '... show more',
+                  moreStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: CColors.primary),
+                  lessStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: CColors.primary),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
