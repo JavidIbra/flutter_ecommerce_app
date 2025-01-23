@@ -1,17 +1,13 @@
 class CImages {
   //---app logos
   static const String darkAppLogo = "assets/logos/download.png";
-
   static const String lightAppLogo = "assets/logos/logo_dark.png";
 
   //--- Social Logos
-
   static const String google = "assets/logos/google.png";
-
   static const String facebook = "assets/logos/facebook.png";
 
   //--- Onboarding Images
-
   static const String onBoardingImage1 =
       "assets/images/on_boarding_images/profile.gif";
   static const String onBoardingImage2 =
@@ -20,7 +16,6 @@ class CImages {
       "assets/images/on_boarding_images/start.gif";
 
   //--- Product Reviews
-
   static const String userProfileImage1 =
       "assets/images/reviews/profile_review1.jpg";
   static const String userProfileImage2 =
@@ -28,8 +23,18 @@ class CImages {
   static const String userProfileImage3 =
       "assets/images/reviews/profile_review3.jpg";
 
-  //--- Profile
+  //--- Payment Methods
+  static const String applePay = "assets/icons/payment/apple-pay.png";
+  static const String googlePay = "assets/icons/payment/google-pay.png";
+  static const String creditCard = "assets/icons/payment/credit-card.png";
+  static const String masterCard = "assets/icons/payment/master-card.png";
+  static const String paypal = "assets/icons/payment/paypal.png";
+  static const String visa = "assets/icons/payment/visa.png";
+  static const String payStack = "assets/icons/payment/paystack.png";
+  static const String payTm = "assets/icons/payment/paytm.png";
+  static const String successfulPaymentIcon = "assets/icons/payment/succes.png";
 
+  //--- Profile
   static const String user = "assets/images/user/userprof.png";
 
   //--- Animations

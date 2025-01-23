@@ -22,9 +22,9 @@ class CBottomAddToCard extends StatelessWidget {
             topRight: Radius.circular(CSizes.cardRadiusLg)),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const CCircularIcon(
                 icon: Iconsax.minus,
@@ -46,15 +46,15 @@ class CBottomAddToCard extends StatelessWidget {
                 height: 40,
                 color: CColors.white,
               ),
-              ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(CSizes.md),
-                      backgroundColor: CColors.black,
-                      side: const BorderSide(color: CColors.black)),
-                  child: const Text('Add to Cart'))
             ],
-          )
+          ),
+          ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.all(CSizes.md),
+                  backgroundColor: CColors.black,
+                  side: const BorderSide(color: CColors.black)),
+              child: const Text('Add to Cart'))
         ],
       ),
     );

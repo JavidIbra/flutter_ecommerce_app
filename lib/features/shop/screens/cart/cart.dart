@@ -23,6 +23,8 @@ class CartScreen extends StatelessWidget {
         ///  -- Items in cart
         child: CCartItems(),
       ),
+
+      /// Checkout button
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(CSizes.defaultSpace),
         child: ElevatedButton(

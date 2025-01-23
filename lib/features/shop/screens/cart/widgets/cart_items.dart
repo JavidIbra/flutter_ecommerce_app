@@ -15,7 +15,7 @@ class CCartItems extends StatelessWidget {
     final dark = CHelperFunctions.isDarkMode(context);
     return ListView.separated(
       shrinkWrap: true,
-      itemCount: 4,
+      itemCount: 2,
       separatorBuilder: (_, __) =>
           const SizedBox(height: CSizes.spaceBtwSections),
       itemBuilder: (_, index) => Column(

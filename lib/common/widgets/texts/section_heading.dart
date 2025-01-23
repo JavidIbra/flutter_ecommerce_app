@@ -6,7 +6,7 @@ class CSectionHeading extends StatelessWidget {
     required this.title,
     this.buttonTitle = " View All",
     this.textColor,
-    this.showActionButton = false,
+    this.showActionButton = true,
     this.onPressed,
   });
 

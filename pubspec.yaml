@@ -45,7 +45,7 @@ dependencies:
   flutter_native_splash: ^2.4.1
 
   # state management
-  get: ^4.6.5
+  get: ^4.6.6
   get_storage: ^2.1.1
   smooth_page_indicator: ^1.2.0+3
 
@@ -85,6 +85,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/icons/payment/
     - assets/logos/
     - assets/images/on_boarding_images/
     - assets/images/animations/

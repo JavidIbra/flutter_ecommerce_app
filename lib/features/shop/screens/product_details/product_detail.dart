@@ -20,7 +20,7 @@ class ProductDetail extends StatelessWidget {
     final dark = CHelperFunctions.isDarkMode(context);
 
     return Scaffold(
-      bottomNavigationBar: CBottomAddToCard(),
+      bottomNavigationBar: const CBottomAddToCard(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -73,12 +73,11 @@ class ProductDetail extends StatelessWidget {
 
                   ///  - Reviews
                   const Divider(),
-                  const SizedBox(height: CSizes.spaceBtwItems),
+                  const SizedBox(height: CSizes.spaceBtwItems / 2),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const CSectionHeading(
-                            title: 'Reviews(100)', showActionButton: false),
+                        const CSectionHeading(title: 'Reviews(100)'),
                         IconButton(
                           onPressed: () =>
                               Get.to(() => const ProductReviewsScreen()),
