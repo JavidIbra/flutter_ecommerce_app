@@ -23,7 +23,7 @@ class CProductCardVertical extends StatelessWidget {
 
     ///Container with side paddings color edges radius and shadow
     return GestureDetector(
-      onTap: () => Get.to(() => const ProductDetail()),
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -111,6 +111,8 @@ class CProductCardVertical extends StatelessWidget {
                   padding: EdgeInsets.only(left: CSizes.sm),
                   child: CProductPriceText(price: '35.0'),
                 ),
+
+                /// Add to Cart button
                 Container(
                   decoration: const BoxDecoration(
                     color: CColors.dark,

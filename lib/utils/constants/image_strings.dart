@@ -38,7 +38,6 @@ class CImages {
   static const String user = "assets/images/user/userprof.png";
 
   //--- Animations
-
   static const String productsIllustration =
       "assets/images/animations/profile.gif";
   static const String productsSaleIllustration =
@@ -48,10 +47,15 @@ class CImages {
   static const String productIllustration =
       "assets/images/animations/profile.gif";
 
+  // --- CategoryImages
+  static const String shoeIcon = "assets/images/categories/footwear.png";
+
+  // -- Banner images
   static const String promoBanner1 = "assets/images/banners/shoes.jpg";
   static const String promoBanner2 = "assets/images/banners/shoes2.jpg";
   static const String promoBanner3 = "assets/images/banners/shoes3.jpg";
 
+  // -- Product Image
   static const String productImage1 = "assets/images/products/product1.jpg";
   static const String productImage2 = "assets/images/products/product2.jpg";
   static const String productImage3 = "assets/images/products/product3.jpg";
